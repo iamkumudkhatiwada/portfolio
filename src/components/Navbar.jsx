@@ -5,6 +5,8 @@ import {
   DialogTrigger,
 } from './ui/dialog';
 import { CiFacebook, CiInstagram, CiLinkedin } from 'react-icons/ci';
+import logo from '/kumud.png';
+import about from '/about.jpeg';
 
 function Navbar() {
   const socials = [
@@ -26,7 +28,7 @@ function Navbar() {
   ];
   return (
     <div className="flex justify-between mt-2">
-      <img className="w-36" src="/kumud.png" alt="logo" />
+      <img className="w-36" src={logo} alt="logo" />
       <div className="flex gap-10 md:mr-32 self-center">
         <Dialog>
           <DialogTrigger>
@@ -36,7 +38,7 @@ function Navbar() {
           </DialogTrigger>
           <DialogContent className="flex bg-slate-700 w-[75%] ">
             <div className="w-32 md:w-96 ">
-              <img className="rounded-xl" src="/about.jpeg" alt="about" />
+              <img className="rounded-xl" src={about} alt="about" />
             </div>
             <DialogDescription className="self-center">
               <p className="text-slate-50  font-bold text-2xl text-center">
