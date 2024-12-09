@@ -7,6 +7,7 @@ import {
 import { CiFacebook, CiInstagram, CiLinkedin } from 'react-icons/ci';
 import logo from '/kumud.png';
 import about from '/about.jpeg';
+import { Separator } from './ui/separator';
 
 function Navbar() {
   const socials = [
@@ -36,7 +37,7 @@ function Navbar() {
               About Me
             </p>
           </DialogTrigger>
-          <DialogContent className="flex bg-slate-700 w-[75%] ">
+          <DialogContent className="flex bg-slate-700 w-[100%] ">
             <div className="w-32 md:w-96 ">
               <img className="rounded-xl" src={about} alt="about" />
             </div>
@@ -44,6 +45,7 @@ function Navbar() {
               <p className="text-slate-50  font-bold text-2xl text-center">
                 Full Stack Developer Based in Kathmandu
               </p>
+              <Separator className=" text-slate-50" />
               <div className="text-slate-50 text-left ml-3   gap-y-1">
                 <span>
                   2+ years of Experience thrieving as a team player as well as
